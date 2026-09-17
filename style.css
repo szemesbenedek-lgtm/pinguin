@@ -1,0 +1,95 @@
+/**/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.container, .main-container, .scroll-container, .container-zindex{
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+
+}
+.box, .son-absolute, .button-fixed, .stiky-element, .layer{
+    border: 1px solid red;
+    padding: 10px;
+}
+/*position stattic*/
+
+/*position relative*/
+
+.box-relative{
+    width: 80%;
+    background-color: lightcoral;
+    position: relative;
+    top: 20px;
+    left:60px;
+}
+/*position absolute*/
+.main-container{
+    height: 100px;
+    position: relative;
+
+}
+.son-absolute{
+    background-color: aquamarine;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+/*position fixed*/
+/*elements stays in a fixed place*/
+.button-fixed{
+    background-color: lightcoral;
+    color: rgb(1, 0, 0);
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+/*position stiky*/
+.scroll-container{
+    height: 150px;
+    overflow: auto;
+
+}
+.stiky-elements{
+    background-color: blueviolet;
+    color: beige;
+    position: sticky;
+    top: 5px;
+    
+}
+/*propieted z-index*/
+.container-zindex{
+    position: relative;
+    height: 150px;
+}
+.layer{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+}
+.layer1{
+    background-color: aquamarine;
+    color: black;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+
+}
+.layer2{
+    background-color: red;
+    color: aliceblue;
+    top: 40px;
+    left: 40px;
+
+}
+.layer3{
+    background-color: green;
+    top: 60px;
+    left: 60px;
+    z-index: -10;
+}
